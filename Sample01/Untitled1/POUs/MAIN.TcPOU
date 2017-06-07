@@ -1,0 +1,26 @@
+﻿<TcPlcObject Version="1.1.0.1" ProductVersion="3.1.0.23">
+  <POU Name="MAIN" Id="{7e24bc78-8f19-4dcc-936b-f37d10b6e396}">
+    <Declaration><![CDATA[PROGRAM MAIN
+VAR
+END_VAR
+]]></Declaration>
+    <Implementation>
+      <ST><![CDATA[P_Light_Test_ST();
+P_Light_Test_CFC();
+
+P_DelayedLight_Test_ST();
+P_DelayedLight_Test_CFC();
+
+P_DimmingLight_Test_ST();
+P_DimmingLight_Test_CFC();
+
+P_MyLight_Test_ST();
+P_MyLight_Test_CFC();
+
+P_RoomController_Test_ST();
+P_RoomController_Test_CFC();
+]]></ST>
+    </Implementation>
+    <ObjectProperties />
+  </POU>
+</TcPlcObject>
